@@ -1,10 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
-
+/* General */
+body {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Overpass', sans-serif;
+  margin: 0;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__link {
+  text-decoration: none;
+}
+/* Footer Section */
+.footer {
+  background: hsl(240, 10%, 16%);
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 75px 150px 25px;
+  border-top-right-radius: 100px;
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__menu__block-title {
+  font-weight: 500;
+}
+.footer__menu__sub-menu {
+  margin-top: 40px;
+}
+.footer__menu__item {
+  margin-bottom: 15px;
+}
+.footer__menu__link {
+  color: hsl(240, 2%, 79%);
+}
 /* Attribution section */
 .attribution {
   font-size: 11px;
   text-align: center;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin: 50px 0 0 0;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(240, 2%, 79%);
 }
