@@ -14,6 +14,31 @@ body {
 .menu__link {
   text-decoration: none;
 }
+/* Third Scetion */
+.sect-three {
+  display: grid;
+  grid-template-columns: 50% 1fr 225px;
+  align-items: center;
+  margin: 100px 0 150px 0;
+}
+.sect-three__image-block {
+  margin-left: -295px;
+}
+.sect-three__image-block__image {
+  width: 100%;
+}
+.sect-three__text-block__title {
+  font-size: 26px;
+  color: hsl(208, 49%, 24%);
+  margin: 20px 0;
+}
+.sect-three__text-block__text {
+  line-height: 2;
+  margin: 15px 0 0 0;
+}
+.sect-three__text-block__text-one {
+  margin-bottom: 100px;
+}
 /* Footer Section */
 .footer {
   background: hsl(240, 10%, 16%);
