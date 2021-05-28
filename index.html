@@ -9,56 +9,67 @@
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
-    <div>
-      <header>
-        <div>
-          <img src="images/logo.svg" alt="Blogr" />
-        </div>
-        <nav>
-          <button><img src="images/icon-hamburger.svg" alt="Menu" /></button>
-          <ul>
-            <li>
-              <span tabindex="0">Product</span>
-              <ul>
-                <li><a href="">Overview</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Marketplace</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Integrations</a></li>
-              </ul>
-            </li>
-            <li>
-              <span tabindex="0">Company</span>
-              <ul>
-                <li><a href="">About</a></li>
-                <li><a href=""> Team</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Careers</a></li>
-              </ul>
-            </li>
-            <li>
-              <span tabindex="0">Connect</span>
-              <ul>
-                <li><a href="">Contact</a></li>
-                <li><a href=""> Newsletter</a></li>
-                <li><a href="">LinkedIn</a></li>
-              </ul>
-            </li>
+    <div class="sect-top-wrapper">
+      <div class="sect-top">
+        <header class="header">
+          <div>
+            <img src="images/logo.svg" alt="Blogr" />
+          </div>
+          <nav class="navigation">
+            <button class="navigation__mobile-menu-button"><img src="images/icon-hamburger.svg" alt="Menu" /></button>
+            <ul class="menu navigation__menu">
+              <li class="navigation__menu__item-title">
+                <span tabindex="0">Product</span>
+                <span>
+                  <img src="images/icon-arrow-light.svg" alt="" />
+                </span>
+                <ul class="menu navigation__menu__sub-menu">
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Overview</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Pricing</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Marketplace</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Features</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Integrations</a></li>
+                </ul>
+              </li>
+              <li class="navigation__menu__item-title">
+                <span tabindex="0">Company</span>
+                <span>
+                  <img src="images/icon-arrow-light.svg" alt="" />
+                </span>
+                <ul class="menu navigation__menu__sub-menu">
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">About</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link"> Team</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Blog</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Careers</a></li>
+                </ul>
+              </li>
+              <li class="navigation__menu__item-title">
+                <span tabindex="0">Connect</span>
+                <span>
+                  <img src="images/icon-arrow-light.svg" alt="" />
+                </span>
+                <ul class="menu navigation__menu__sub-menu">
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Contact</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link"> Newsletter</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">LinkedIn</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="menu navigation__menu__buttons">
+              <li><a href="" class="menu__link navigation__menu__link-login">Login</a></li>
+              <li><a href="" class="button button-one">Sign Up</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section class="sect-intro">
+          <h1 class="sect-intro__title">A modern publishing platform</h1>
+          <p class="sect-intro__text">Grow your audience and build your online brand</p>
+          <ul class="sect-intro__buttons">
+            <li><a href="" class="button button-one">Start for Free</a></li>
+            <li><a href="" class="button button-two">Learn More</a></li>
           </ul>
-          <ul>
-            <li><a href="">Login</a></li>
-            <li><a href="">Sign Up</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section>
-        <h1>A modern publishing platform</h1>
-        <p>Grow your audience and build your online brand</p>
-        <ul>
-          <li><a href="">Start for Free</a></li>
-          <li><a href="">Learn More</a></li>
-        </ul>
-      </section>
+        </section>
+      </div>
     </div>
     <section class="sect-first">
       <h2 class="title sect-first__title">Designed for the future</h2>

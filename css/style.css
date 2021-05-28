@@ -17,6 +17,109 @@ body {
 .title {
   color: hsl(208, 49%, 24%);
 }
+.button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.button-one {
+  background: #ffffff;
+  color: hsl(356, 100%, 66%);
+}
+/* Top Section */
+.sect-top-wrapper {
+  background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
+.sect-top {
+  background: url(../images/bg-pattern-intro.svg);
+  background-position: center left -450px;
+  color: #ffffff;
+  padding: 75px 150px 150px;
+}
+/* Header Section */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.navigation__menu {
+  display: flex;
+}
+.navigation__menu__item-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 50px;
+  position: relative;
+  cursor: pointer;
+}
+.navigation__menu__item-title > span:first-child {
+  margin: 0 5px 0 20px;
+}
+.navigation__mobile-menu-button {
+  display: none;
+}
+.navigation__menu__sub-menu {
+  position: absolute;
+  top: 50px;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 25px 40px 25px 20px;
+  box-shadow: 0 5px 15px 1px rgba(37, 37, 37, 0.5);
+  display: none;
+}
+.navigation__menu__item {
+  margin-bottom: 10px;
+}
+.navigation__menu__link {
+  color: hsl(208, 49%, 24%);
+  font-weight: 400;
+}
+.navigation__menu__buttons {
+  display: flex;
+}
+.navigation__menu__buttons > li:first-child {
+  margin-right: 15px;
+}
+.navigation__menu__link-login {
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+/* Intro Section */
+.sect-intro {
+  margin-top: 120px;
+  text-align: center;
+}
+.sect-intro__title {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.sect-intro__text {
+  font-size: 20px;
+  margin: 0 0 75px 0;
+}
+.sect-intro__buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.sect-intro__buttons > li:first-child {
+  margin-right: 15px;
+}
 /* First Section */
 .sect-first {
   display: grid;
