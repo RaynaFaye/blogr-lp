@@ -56,12 +56,52 @@ body {
 .sect-first__text-block__text-one {
   margin-bottom: 75px;
 }
-/* Third Scetion */
+/* Second Section */
+.sect-two {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr 225px;
+  grid-template-rows: 60px 1fr 120px;
+  color: #ffffff;
+}
+.sect-two__image-block {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  z-index: 2;
+}
+.sect-two__image-block__image {
+  width: 100%;
+}
+.sect-two__text-block {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr 225px;
+  background: linear-gradient(rgb(44, 45, 63), rgb(63, 65, 100));
+}
+.sect-two__text-block__circles-background {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  background: url(../images/bg-pattern-circles.svg) no-repeat;
+  background-position: left -225px bottom -125px;
+}
+.sect-two__text-block__text {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+  margin-left: 40px;
+}
+.sect-two__text-block__title {
+  font-size: 34px;
+}
+.sect-two__text-block__paragraph {
+  line-height: 2;
+}
+/* Third Section */
 .sect-three {
   display: grid;
   grid-template-columns: 50% 1fr 225px;
   align-items: center;
-  margin: 100px 0 150px 0;
+  margin: 0 0 150px 0;
 }
 .sect-three__image-block {
   margin-left: -295px;
