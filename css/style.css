@@ -32,6 +32,17 @@ body {
   background: #ffffff;
   color: hsl(356, 100%, 66%);
 }
+.button-one:hover,
+.button-one:focus {
+  background: hsl(355, 100%, 74%);
+  color: #ffffff;
+  border: 1px solid hsl(355, 100%, 74%);
+}
+.button-two:hover,
+.button-two:focus {
+  background: #ffffff;
+  color: hsl(355, 100%, 74%);
+}
 /* Top Section */
 .sect-top-wrapper {
   background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
@@ -45,7 +56,7 @@ body {
 /* Header Section */
 .header {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 5fr;
 }
 .navigation {
   display: flex;
@@ -59,9 +70,14 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  margin-right: 50px;
+  margin-right: 10px;
   position: relative;
   cursor: pointer;
+}
+.navigation__menu__item-title:hover > span:first-child,
+.navigation__menu__item-title:focus > span:first-child {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 .navigation__menu__item-title > span:first-child {
   margin: 0 5px 0 20px;
@@ -85,6 +101,10 @@ body {
   color: hsl(208, 49%, 24%);
   font-weight: 400;
 }
+.navigation__menu__link:hover,
+.navigation__menu__link:focus {
+  font-weight: 500;
+}
 .navigation__menu__buttons {
   display: flex;
 }
@@ -96,6 +116,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 16px;
+}
+.navigation__menu__sign-up {
+  padding: 15px 35px;
 }
 /* Intro Section */
 .sect-intro {
@@ -248,6 +271,11 @@ body {
 }
 .footer__menu__link {
   color: hsl(240, 2%, 79%);
+}
+.footer__menu__link:hover,
+.footer__menu__link:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 /* Attribution section */
 .attribution {
