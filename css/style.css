@@ -102,6 +102,9 @@ body {
   box-shadow: 0 5px 15px 1px rgba(37, 37, 37, 0.5);
   display: none;
 }
+.menu__dropdown--reveal {
+  display: block;
+}
 .navigation__menu__item {
   margin-bottom: 10px;
 }
