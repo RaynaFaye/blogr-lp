@@ -80,6 +80,11 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
+.navigation__menu__item-title:hover > span:nth-child(2) img,
+.navigation__menu__item-title:focus > span:nth-child(2) img {
+  transition: all 0.5s;
+  transform: rotate(180deg);
+}
 .navigation__menu__item-title > span:first-child {
   margin: 0 5px 0 20px;
 }
