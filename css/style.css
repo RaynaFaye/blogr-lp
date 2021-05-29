@@ -71,6 +71,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   margin-right: 10px;
+  padding-bottom: 35px;
   position: relative;
   cursor: pointer;
 }
@@ -81,6 +82,13 @@ body {
 }
 .navigation__menu__item-title > span:first-child {
   margin: 0 5px 0 20px;
+}
+.navigation__menu__item-title:hover .navigation__menu__sub-menu,
+.navigation__menu__item-title .navigation__menu__sub-menu:hover {
+  display: block;
+}
+.navigation__menu__item-title:focus-within .navigation__menu__sub-menu {
+  display: block;
 }
 .navigation__mobile-menu-button {
   display: none;
@@ -122,7 +130,7 @@ body {
 }
 /* Intro Section */
 .sect-intro {
-  margin-top: 120px;
+  margin-top: 85px;
   text-align: center;
 }
 .sect-intro__title {
