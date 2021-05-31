@@ -13,3 +13,11 @@ try {
         });
     }
 }
+
+let sectThreeImage = document.querySelector('.sect-three__image-block__image')
+let sectFirstImage = document.querySelector('.sect-first__image-block__image')
+
+if (window.screen.width < 768) {
+    sectThreeImage.src = "images/illustration-laptop-mobile.svg"
+    sectFirstImage.src = "images/illustration-editor-mobile.svg"
+}
