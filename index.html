@@ -15,49 +15,51 @@
           <div>
             <img src="images/logo.svg" alt="Blogr" />
           </div>
-          <nav class="navigation">
-            <button class="navigation__mobile-menu-button"><img src="images/icon-hamburger.svg" alt="Menu" /></button>
+          <button class="navigation__mobile-menu-button" aria-controls="navigation" aria-expanded="false">
+            <img src="images/icon-hamburger.svg" alt="Menu" />
+          </button>
+          <nav class="navigation hidden" id="navigation">
             <ul class="menu navigation__menu">
               <li class="navigation__menu__item-title">
-                <span tabindex="0">Product</span>
+                <span tabindex="0" class="menu__link__item">Product</span>
                 <span>
                   <img src="images/icon-arrow-light.svg" alt="" />
                 </span>
                 <ul class="menu navigation__menu__sub-menu">
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Overview</a></li>
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Pricing</a></li>
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Marketplace</a></li>
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Features</a></li>
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Integrations</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">Overview</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">Pricing</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">Marketplace</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">Features</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">Integrations</a></li>
                 </ul>
               </li>
               <li class="navigation__menu__item-title">
-                <span tabindex="0">Company</span>
+                <span tabindex="0" class="menu__link__item">Company</span>
                 <span>
                   <img src="images/icon-arrow-light.svg" alt="" />
                 </span>
                 <ul class="menu navigation__menu__sub-menu">
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">About</a></li>
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link"> Team</a></li>
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Blog</a></li>
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Careers</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">About</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item"> Team</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">Blog</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">Careers</a></li>
                 </ul>
               </li>
               <li class="navigation__menu__item-title">
-                <span tabindex="0">Connect</span>
+                <span tabindex="0" class="menu__link__item">Connect</span>
                 <span>
                   <img src="images/icon-arrow-light.svg" alt="" />
                 </span>
                 <ul class="menu navigation__menu__sub-menu">
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">Contact</a></li>
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link"> Newsletter</a></li>
-                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link">LinkedIn</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">Contact</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item"> Newsletter</a></li>
+                  <li class="navigation__menu__item"><a href="" class="menu__link navigation__menu__link menu__link__item">LinkedIn</a></li>
                 </ul>
               </li>
             </ul>
             <ul class="menu navigation__menu__buttons">
-              <li><a href="" class="menu__link navigation__menu__link-login">Login</a></li>
-              <li><a href="" class="button button-one navigation__menu__sign-up">Sign Up</a></li>
+              <li><a href="" class="menu__link navigation__menu__link-login menu__link__item">Login</a></li>
+              <li><a href="" class="button button-one menu__link navigation__menu__sign-up menu__link__item">Sign Up</a></li>
             </ul>
           </nav>
         </header>

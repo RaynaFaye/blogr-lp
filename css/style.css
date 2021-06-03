@@ -310,7 +310,6 @@ body {
   .sect-top-wrapper {
     border-bottom-left-radius: 100px;
     background: linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    overflow: hidden;
   }
   .sect-top {
     background: url(../images/bg-pattern-intro.svg);
@@ -325,9 +324,22 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   .navigation {
     margin: 0;
+    position: absolute;
+    top: 75px;
+    background: #ffffff;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 35px 0 50px 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 1px rgba(37, 37, 37, 0.5);
+  }
+  .hidden {
+    display: none;
   }
   .navigation__mobile-menu-button {
     display: block;
@@ -337,10 +349,41 @@ body {
     cursor: pointer;
   }
   .navigation__menu {
+    display: flex;
+    flex-direction: column;
+    color: hsl(208, 49%, 24%);
+  }
+  .navigation__menu__item-title {
+    margin-right: 0px;
+    padding-bottom: 20px;
+  }
+  .navigation__menu__sub-menu {
+    position: unset;
+    background: hsl(0, 0%, 91%);
+    padding: 20px 20px 10px 20px;
+    margin: 20px 20px 0 20px;
+    box-shadow: none;
     display: none;
   }
+  .navigation__menu__item {
+    margin-bottom: 20px;
+  }
   .navigation__menu__buttons {
-    display: none;
+    margin: 0 20px;
+    padding-top: 25px;
+    flex-direction: column;
+    border-top: 1px solid hsl(0, 0%, 91%);
+  }
+  .navigation__menu__link-login {
+    color: hsl(208, 49%, 24%);
+  }
+  .navigation__menu__buttons > li:first-child {
+    margin-right: 0px;
+    margin-bottom: 35px;
+  }
+  .navigation__menu__sign-up {
+    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: #ffffff;
   }
   /* Intro Section */
   .sect-intro__title {
