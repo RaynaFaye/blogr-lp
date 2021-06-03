@@ -306,6 +306,52 @@ body {
 }
 
 @media all and (max-width: 768px) {
+  /* Top Section */
+  .sect-top-wrapper {
+    border-bottom-left-radius: 100px;
+    background: linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    overflow: hidden;
+  }
+  .sect-top {
+    background: url(../images/bg-pattern-intro.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .sect-top {
+    padding: 75px 35px 150px;
+  }
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation {
+    margin: 0;
+  }
+  .navigation__mobile-menu-button {
+    display: block;
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .navigation__menu {
+    display: none;
+  }
+  .navigation__menu__buttons {
+    display: none;
+  }
+  /* Intro Section */
+  .sect-intro__title {
+    font-size: 34px;
+  }
+  .sect-intro__text {
+    font-size: 18px;
+  }
+  .sect-intro__buttons .button {
+    padding: 15px 20px;
+  }
   /* First Section */
   .sect-first {
     display: flex;
